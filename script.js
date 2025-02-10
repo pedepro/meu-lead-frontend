@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function carregarImoveis() {
         try {
-            const response = await fetch("http://localhost:3000/list-imoveis");
+            const response = await fetch("https://pedepro-meulead.6a7cul.easypanel.host/list-imoveis");
             const data = await response.json();
             const imoveis = Array.isArray(data) ? data : data.imoveis || [];
         
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function carregarClientes() {
         try {
-            const response = await fetch("http://localhost:3000/list-clientes");
+            const response = await fetch("https://pedepro-meulead.6a7cul.easypanel.host/list-clientes");
             const data = await response.json();
             const clientes = Array.isArray(data) ? data : data.clientes || [];
     
